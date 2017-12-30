@@ -8,9 +8,11 @@ import { Header } from './src/components';
 export default class App extends React.Component {
   render() {
     return (
-      <View>
-        <Header />
-      </View>
+      <Provider store={Store}>
+        <View>
+          <Header />
+        </View>
+      </Provider>
     );
   }
 }
