@@ -7,11 +7,9 @@ import FetchCoinData from './../Actions/FetchCoinData';
 import CoinCard from './CoinCard';
 
 class CryptoContainer extends Component {
-
     componentWillMount() {
         this.props.FetchCoinData();
     }
-
     renderCoinCards() {
         const { crypto } = this.props;
         return crypto.data.map((coin) =>
@@ -25,8 +23,6 @@ class CryptoContainer extends Component {
             />
         )
     }
-
-
     render() {
 
         const { crypto } = this.props;
